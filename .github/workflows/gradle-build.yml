@@ -1,4 +1,4 @@
-name: Java CI with Gradle
+name: CI/CD with PostgreSQL
 
 on:
   push:
@@ -9,22 +9,39 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    services:
+      postgres:
+        image: postgres:15
+        ports:
+          - 5432:5432
+        env:
+          POSTGRES_USER: testuser
+          POSTGRES_PASSWORD: testpassword
+          POSTGRES_DB: testdb
+        options: >-
+          --health-cmd "pg_isready -U testuser -d testdb"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
     steps:
-    - uses: actions/checkout@v3
+      # 1. 프로젝트 체크아웃
+      - uses: actions/checkout@v3
 
-    - name: Set up JDK 17
-      uses: actions/setup-java@v3
-      with:
-        java-version: '17'
-        distribution: 'temurin'
+      # 2. JDK 설정
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
 
-    - name: Cache Gradle dependencies
-      uses: actions/cache@v3
-      with:
-        path: ~/.gradle/caches
-        key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
-        restore-keys: |
-          ${{ runner.os }}-gradle-
+      # 3. 환경 변수 설정
+      - name: Set environment variables
+        run: |
+          echo "SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/testdb" >> $GITHUB_ENV
+          echo "SPRING_DATASOURCE_USERNAME=testuser" >> $GITHUB_ENV
+          echo "SPRING_DATASOURCE_PASSWORD=testpassword" >> $GITHUB_ENV
 
-    - name: Build with Gradle
-      run: ./gradlew clean build
+      # 4. Gradle 빌드 및 테스트
+      - name: Build and Test with Gradle
+        run: ./gradlew clean test
