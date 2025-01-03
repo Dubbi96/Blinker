@@ -1,13 +1,19 @@
 package com.blinker.atom.domain;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "sensor")
-@Data
+@Getter
+@Builder
+@RequiredArgsConstructor
+@AllArgsConstructor
 public class Sensor {
 
     @Id
@@ -36,6 +42,15 @@ public class Sensor {
 
     @Column(name = "status", length = 20)
     private String status;
+
+    @Column(name = "button_click_count", columnDefinition = "INT DEFAULT 0")
+    private Integer buttonClickCount;
+
+    @Column(name = "location_guide_count", columnDefinition = "INT DEFAULT 0")
+    private Integer locationGuideCount;
+
+    @Column(name = "signal_guide_count", columnDefinition = "INT DEFAULT 0")
+    private Integer signalGuideCount;
 
     @Column(name = "created_at")
     private LocalDateTime createdAt;

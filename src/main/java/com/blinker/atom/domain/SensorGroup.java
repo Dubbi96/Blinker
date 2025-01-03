@@ -1,14 +1,20 @@
 package com.blinker.atom.domain;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
 @Table(name = "sensor_group")
-@Data
+@Getter
+@Builder
+@RequiredArgsConstructor
+@AllArgsConstructor
 public class SensorGroup {
 
     @Id

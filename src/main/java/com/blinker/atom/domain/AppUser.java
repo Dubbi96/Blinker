@@ -1,13 +1,19 @@
 package com.blinker.atom.domain;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "app_user")
-@Data
+@Getter
+@Builder
+@RequiredArgsConstructor
+@AllArgsConstructor
 public class AppUser {
 
     @Id
