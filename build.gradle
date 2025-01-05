@@ -26,7 +26,7 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     implementation 'org.jetbrains:annotations:24.0.1'
-    implementation 'com.vladmihalcea:hibernate-types-60:2.21.1'
+    implementation 'io.hypersistence:hypersistence-utils-hibernate-63:3.9.0'
 
     // Lombok
     compileOnly 'org.projectlombok:lombok:1.18.30'

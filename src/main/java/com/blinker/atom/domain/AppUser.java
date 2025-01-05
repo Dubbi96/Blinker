@@ -1,6 +1,6 @@
 package com.blinker.atom.domain;
 
-import com.vladmihalcea.hibernate.type.array.ListArrayType;
+import io.hypersistence.utils.hibernate.type.array.ListArrayType;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.Type;
