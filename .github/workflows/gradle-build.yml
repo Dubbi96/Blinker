@@ -42,7 +42,9 @@ jobs:
             ${{ runner.os }}-gradle-
 
       - name: Enable Gradle Build Cache
-        run: echo "org.gradle.caching=true" >> ~/.gradle/gradle.properties
+        run: |
+          mkdir -p ~/.gradle
+          echo "org.gradle.caching=true" > ~/.gradle/gradle.properties
 
       - name: Set environment variables
         run: |
