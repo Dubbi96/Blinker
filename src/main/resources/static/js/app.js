@@ -14,13 +14,16 @@ const statusColors = {
 
 // sensors/detail 데이터를 LNB에 표시
 function refreshSignalList() {
-    fetch('/api/sensors/detail')
+    fetch('/api/sensors/detail', {
+        method: 'GET',
+        headers: { Authorization: localStorage.getItem('Authorization') }
+    })
         .then(response => response.json())
-        .then(signals => {
+        .then(data => {
             const signalList = document.getElementById('signal-list');
             signalList.innerHTML = '';
 
-            signals.forEach(signal => {
+            data.response.forEach(signal => {
                 const card = document.createElement('div');
                 card.className = 'signal-card';
 
@@ -33,19 +36,26 @@ function refreshSignalList() {
                     <div>${new Date(signal.createdAt).toLocaleString()}</div>
                     <div><span class="status-icon ${statusColors[signal.status]}"></span></div>
                 `;
-
                 signalList.appendChild(card);
             });
         })
         .catch(error => console.error('Error fetching signal list:', error));
-}
+    }
 
 // sensors 데이터를 기반으로 지도에 마커 표시
 function loadMapMarkers() {
-    fetch('/api/sensors')
+    const token = localStorage.getItem('Authorization'); // 토큰 가져오기
+
+    fetch('/api/sensors', {
+        method: 'GET',
+        headers: {
+            Authorization: token,
+            'Content-Type': 'application/json'
+        }
+    })
         .then(response => response.json())
         .then(sensors => {
-            sensors.forEach(sensor => {
+            sensors.response.forEach(sensor => {
                 if (!sensor.latitude || !sensor.longitude) {
                     console.warn(`센서 ${sensor.sensorId}의 좌표가 없습니다.`);
                     return;
@@ -77,8 +87,8 @@ document.addEventListener('DOMContentLoaded', () => {
     loadMapMarkers();
 });
 
-signals.forEach(signal => {
-    const signalCard = document.createElement('div');
-    signalCard.className = `signal-card ${signal.status}`;
-    signalListContainer.appendChild(signalCard);
-});
+function logout() {
+            localStorage.removeItem('Authorization');
+            alert('로그아웃 되었습니다. 로그인 페이지로 이동합니다.');
+            window.location.href = '/auth/sign-in';
+        }

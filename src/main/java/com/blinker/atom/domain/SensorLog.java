@@ -21,7 +21,7 @@ public class SensorLog {
     @Column(name = "log_id")
     private Long logId;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "sensor_id")
     private Sensor sensor;
 

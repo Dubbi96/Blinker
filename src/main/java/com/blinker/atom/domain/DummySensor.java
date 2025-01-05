@@ -21,7 +21,7 @@ public class DummySensor {
     @Column(name = "dummy_sensor_id")
     private Long dummySensorId;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "group_id", nullable = false)
     private SensorGroup group;
 

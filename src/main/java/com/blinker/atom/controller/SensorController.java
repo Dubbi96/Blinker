@@ -1,10 +1,15 @@
 package com.blinker.atom.controller;
 
+import com.blinker.atom.config.security.LoginAppUser;
+import com.blinker.atom.domain.AppUser;
 import com.blinker.atom.dto.SensorDto;
 import com.blinker.atom.service.SensorService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestHeader;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -24,9 +29,9 @@ public class SensorController {
      * @return 신호기 데이터 목록
      */
     @GetMapping
-    public List<SensorDto> getAllSensors() {
+    public ResponseEntity<List<SensorDto>> getAllSensors() {
         log.info("전체 조회 : /api/sensors");
-        return sensorService.getAllSensors();
+        return ResponseEntity.ok(sensorService.getAllSensors());
     }
 
     /**
@@ -34,9 +39,9 @@ public class SensorController {
      * @return 신호기 데이터 목록
      */
     @GetMapping("/detail")
-    public List<Map<String, Object>> getSensorDetailList() {
+    public ResponseEntity<List<Map<String, Object>>> getSensorDetailList() {
         log.info("디테일 조회 : /api/sensors/detail");
-        return sensorService.getAllSensorDetail();
+        return ResponseEntity.ok(sensorService.getAllSensorDetail());
     }
 
 }

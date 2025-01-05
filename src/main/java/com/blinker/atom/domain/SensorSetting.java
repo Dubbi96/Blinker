@@ -21,7 +21,7 @@ public class SensorSetting {
     @Column(name = "setting_id")
     private Long settingId;
 
-    @OneToOne
+    @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "sensor_id")
     private Sensor sensor;
 

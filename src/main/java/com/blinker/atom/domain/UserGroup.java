@@ -21,7 +21,7 @@ public class UserGroup {
     @Column(name = "user_group_id")
     private Long userGroupId;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", nullable = false)
     private AppUser user;
 
