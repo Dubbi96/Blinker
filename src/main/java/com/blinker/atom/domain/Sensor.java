@@ -1,10 +1,7 @@
 package com.blinker.atom.domain;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
@@ -12,7 +9,7 @@ import java.time.LocalDateTime;
 @Table(name = "sensor")
 @Getter
 @Builder
-@RequiredArgsConstructor
+@NoArgsConstructor
 @AllArgsConstructor
 public class Sensor {
 

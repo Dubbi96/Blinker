@@ -1,10 +1,7 @@
 package com.blinker.atom.domain;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
@@ -12,7 +9,7 @@ import java.time.LocalDateTime;
 @Table(name = "user_group")
 @Getter
 @Builder
-@RequiredArgsConstructor
+@NoArgsConstructor
 @AllArgsConstructor
 public class UserGroup {
 
@@ -28,9 +25,6 @@ public class UserGroup {
     @ManyToOne
     @JoinColumn(name = "group_id", nullable = false)
     private SensorGroup group;
-
-    @Column(name = "role", length = 20)
-    private String role = "MEMBER";
 
     @Column(name = "created_at")
     private LocalDateTime createdAt;

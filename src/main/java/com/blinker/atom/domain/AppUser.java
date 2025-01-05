@@ -2,10 +2,7 @@ package com.blinker.atom.domain;
 
 import com.vladmihalcea.hibernate.type.array.ListArrayType;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.Type;
 import org.hibernate.annotations.Parameter;
 
@@ -19,8 +16,8 @@ import java.util.List;
 @Table(name = "app_user")
 @Getter
 @Builder
-@RequiredArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 public class AppUser {
 
     @Id

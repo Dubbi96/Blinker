@@ -63,8 +63,8 @@ function loadMapMarkers() {
 
                 const position = new kakao.maps.LatLng(sensor.latitude, sensor.longitude);
                 const markerImage = new kakao.maps.MarkerImage(
-                    `/images/${statusColors[sensor.status]}-icon.png`,
-                    new kakao.maps.Size(24, 24)
+                    `/images/marker-${statusColors[sensor.status]}-icon.png`,
+                    new kakao.maps.Size(20, 35)
                 );
 
                 const marker = new kakao.maps.Marker({

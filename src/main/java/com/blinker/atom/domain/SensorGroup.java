@@ -1,10 +1,7 @@
 package com.blinker.atom.domain;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -13,7 +10,7 @@ import java.util.List;
 @Table(name = "sensor_group")
 @Getter
 @Builder
-@RequiredArgsConstructor
+@NoArgsConstructor
 @AllArgsConstructor
 public class SensorGroup {
 
