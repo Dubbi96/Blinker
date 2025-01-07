@@ -20,6 +20,7 @@ import java.util.List;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
+import static org.aspectj.weaver.tools.cache.SimpleCacheFactory.path;
 
 @Slf4j
 @Component
@@ -32,41 +33,45 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     private final JwtProvider jwtProvider;
     private final AppUserRepository appUserRepository;
 
-    @Override
+    /*@Override
     protected boolean shouldNotFilter(HttpServletRequest request) {
         String path = request.getRequestURI();
-        // 정적 리소스 및 JSP 경로를 제외
-        return path.startsWith("/webapp/") || path.startsWith("/css/") ||
-               path.startsWith("/js/") || path.startsWith("/images/") ||
-               path.endsWith(".jsp");
-    }
+        boolean shouldNotFilter = path.startsWith("/webapp/") || path.startsWith("/css/") ||
+                   path.startsWith("/js/") || path.startsWith("/images/") ||
+                   path.endsWith(".jsp") || path.startsWith("/auth/");
+        log.debug("shouldNotFilter: path = {}, result = {}", path, shouldNotFilter);
+        return shouldNotFilter;
+    }*/
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain)
             throws ServletException, IOException {
+        // 인증된 사용자 정보가 이미 설정된 경우 체인 진행
         if (nonNull(SecurityContextHolder.getContext().getAuthentication())) {
-            log.debug("SecurityContextHolder는 이미 authentication 객체를 가지고 있습니다.: '{}'",
-                    SecurityContextHolder.getContext().getAuthentication());
             chain.doFilter(request, response);
             return;
         }
+
+        // 헤더에서 토큰 추출
         String jwtToken = request.getHeader(Value.ACCESS_TOKEN_HEADER_KEY);
         if (isNull(jwtToken) || !jwtToken.startsWith("Bearer ")) {
+            log.debug("JWT 토큰이 없거나 유효하지 않음: {}", jwtToken);
             chain.doFilter(request, response);
             return;
         }
-        jwtToken = jwtToken.substring(7); // "Bearer " 이후의 실제 토큰 값 추출
+
+        jwtToken = jwtToken.substring(7); // "Bearer " 이후의 토큰 값 추출
         try {
             Claims claims = jwtProvider.parseToken(jwtToken);
+            log.info("토큰 검증 성공: '{}'",jwtToken);
             JwtAuthenticationToken authenticationToken = authenticate(claims);
             SecurityContextHolder.getContext().setAuthentication(authenticationToken);
         } catch (Exception e) {
             log.error("토큰 검증 실패: '{}'", e.getMessage(), e);
             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
             response.getWriter().write("Invalid or expired token");
-            return; // 필터 체인 진행 중단
+            return; // 필터 체인 중단
         }
-        log.debug("JWT Token: {}", jwtToken);
 
         chain.doFilter(request, response);
     }

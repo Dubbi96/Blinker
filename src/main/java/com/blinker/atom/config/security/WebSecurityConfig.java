@@ -83,7 +83,7 @@ public class WebSecurityConfig {
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(requests ->
                         requests
-                                .requestMatchers("/auth/**","/main").permitAll() // Public 경로
+                                .requestMatchers("/public/**","/auth/**","/main").permitAll() // Public 경로
                                 .requestMatchers("/WEB-INF/views/**").permitAll() // JSP 파일 허용
                                 .requestMatchers("/css/**", "/js/**", "/images/**", "/resources/**", "/static/**").permitAll() // 정적 리소스 허용
                                 .anyRequest().authenticated()
@@ -102,7 +102,7 @@ public class WebSecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of("http://localhost:8080")); // 허용할 도메인
+        configuration.setAllowedOrigins(List.of("http://localhost:3001", "http://localhost:3000")); // 허용할 도메인
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("Authorization", "Content-Type"));
         configuration.setAllowCredentials(true);

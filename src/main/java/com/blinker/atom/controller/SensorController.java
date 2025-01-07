@@ -1,15 +1,11 @@
 package com.blinker.atom.controller;
 
-import com.blinker.atom.config.security.LoginAppUser;
-import com.blinker.atom.domain.AppUser;
 import com.blinker.atom.dto.SensorDto;
 import com.blinker.atom.service.SensorService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestHeader;
-import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
