@@ -26,6 +26,7 @@ public class AuthService {
     private final PasswordEncoder passwordEncoder;
     private final JwtProvider jwtProvider;
 
+    @Transactional(readOnly = true)
     public String login(SignInRequestDto authRequest) {
         AppUser user = appUserRepository.findByUsername(authRequest.getUsername())
                 .orElseThrow(() -> new RuntimeException("사용자가 존재하지 않습니다."));
@@ -49,7 +50,7 @@ public class AuthService {
         String salt = UUID.randomUUID().toString();
         String encodedPassword = passwordEncoder.encode(authRequestDto.getPassword() + salt);
 
-        Role userRole = Role.valueOf(authRequestDto.getRole().toString().toUpperCase()); // String을 Role enum으로 변환
+        Role userRole = Role.valueOf(authRequestDto.getRole().toUpperCase()); // String을 Role enum으로 변환
 
         AppUser newUser = AppUser.builder()
                 .username(authRequestDto.getUsername())

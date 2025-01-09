@@ -19,7 +19,7 @@ public class AuthController {
 
     @PostMapping("/sign-in")
     public String login(@RequestBody SignInRequestDto authRequest) {
-        log.info("로그인 요청 받음: {}", authRequest); // 요청이 도달했는지 확인
+        log.info("로그인 요청 받음: {}", authRequest.getUsername());
         return authService.login(authRequest);
     }
 

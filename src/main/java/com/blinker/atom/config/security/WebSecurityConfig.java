@@ -84,8 +84,6 @@ public class WebSecurityConfig {
                 .authorizeHttpRequests(requests ->
                         requests
                                 .requestMatchers("/public/**","/auth/**","/main").permitAll() // Public 경로
-                                .requestMatchers("/WEB-INF/views/**").permitAll() // JSP 파일 허용
-                                .requestMatchers("/css/**", "/js/**", "/images/**", "/resources/**", "/static/**").permitAll() // 정적 리소스 허용
                                 .anyRequest().authenticated()
                 )
                 .cors(httpSecurityCorsConfigurer -> httpSecurityCorsConfigurer.configurationSource(corsConfigurationSource()))
