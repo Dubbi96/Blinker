@@ -8,12 +8,6 @@ import java.util.Map;
 @Slf4j
 public class EncodingUtil {
 
-    /**
-     * Encodes ContentInstanceRequestDto to a fixed-length 102-character hex string.
-     *
-     * @param contentInstanceRequestDto the DTO containing the content to encode
-     * @return a hex-encoded string
-     */
     public static String encodeToHex(ContentInstanceRequestDto contentInstanceRequestDto) {
         if (contentInstanceRequestDto == null || contentInstanceRequestDto.getContent() == null) {
             throw new IllegalArgumentException("Invalid request: content is null");
@@ -95,28 +89,24 @@ public class EncodingUtil {
         hexString.append(String.format("%02x", content.getGroupPositionNumber()));
 
         // 23. Data Type (2자리)
-        hexString.append(String.format("%02x", content.getDataType())); // Default value for now
+        hexString.append(String.format("%02x", content.getDataType()));
 
         // 24. Sequence Number (2자리)
-        hexString.append(String.format("%02x", content.getSequenceNumber())); // Default value for now
+        hexString.append(String.format("%02x", content.getSequenceNumber()));
 
-        // Calculate Padding Length
-        int paddingLength = 102 - hexString.length() - 2; // Exclude checksum (2자리)
+        int paddingLength = 102 - hexString.length() - 2;
         if (paddingLength < 0) {
             throw new IllegalStateException("Encoded data exceeds 102 characters");
         }
 
-        // Add Padding
         String padding = "0".repeat(paddingLength);
         hexString.append(padding);
         log.debug("Added Padding: {}", padding);
 
-        // Calculate Checksum (2자리)
         String checksum = calculateChecksum(hexString.toString());
         hexString.append(checksum);
         log.debug("Encoded Checksum: {}", checksum);
 
-        // Final Length Check
         if (hexString.length() != 102) {
             throw new IllegalStateException("Final encoded data length is not 102: " + hexString.length());
         }

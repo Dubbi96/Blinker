@@ -91,10 +91,6 @@ public class ParsingUtil {
             index += 2;
 
             data.setSequenceNumber(Integer.parseInt(message.substring(index, index + 2), 16));
-            index += 2;
-
-            // 체크섬 검증 제거
-            System.out.println("Checksum skipped for this parsing operation.");
 
         } catch (Exception e) {
             data.setParsingError(true);
@@ -162,7 +158,7 @@ public class ParsingUtil {
         if ((faultInfo & 16) == 16) sb.append("Speaker Fault, ");
         if ((faultInfo & 32) == 32) sb.append("Signal Light Residual Fault");
 
-        if (sb.length() > 0 && sb.charAt(sb.length() - 2) == ',') {
+        if (!sb.isEmpty() && sb.charAt(sb.length() - 2) == ',') {
             sb.delete(sb.length() - 2, sb.length());
         }
         return sb.toString();
