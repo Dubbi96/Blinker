@@ -22,8 +22,11 @@ public class AppUser {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "user_id")
-    private Long userId;
+    @Column(name = "app_user_id")
+    private Long appUserId;
+
+    @Column(name = "user_id", nullable = false, unique = true, length = 50)
+    private String userId;
 
     @Column(name = "username", nullable = false, unique = true, length = 50)
     private String username;

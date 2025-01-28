@@ -35,8 +35,8 @@ public class AuthService {
         }
 
         Map<String, Object> claims = new HashMap<>();
-        claims.put("userId", user.getUserId());
-        claims.put("username", user.getUsername());
+        claims.put("userId", user.getAppUserId());
+        claims.put("username", user.getUserId());
         claims.put("role", user.getRoles());
 
         return jwtProvider.createToken(claims);
@@ -53,7 +53,7 @@ public class AuthService {
         Role userRole = Role.valueOf(authRequestDto.getRole().toUpperCase()); // String을 Role enum으로 변환
 
         AppUser newUser = AppUser.builder()
-                .username(authRequestDto.getUsername())
+                .userId(authRequestDto.getUsername())
                 .email(null) // email 받으라 하면 추가
                 .password(encodedPassword)
                 .salt(salt)
@@ -62,15 +62,15 @@ public class AuthService {
                 .build();
 
         appUserRepository.save(newUser);
-        return newUser.getUserId();
+        return newUser.getAppUserId();
     }
 
     public AppUserResponseDto getUserDetails(Long userId) {
         AppUser user = appUserRepository.findById(userId)
                 .orElseThrow(() -> new RuntimeException("사용자가 존재하지 않습니다."));
         AppUserResponseDto userResponse = new AppUserResponseDto();
-        userResponse.setUserId(user.getUserId());
-        userResponse.setUsername(user.getUsername());
+        userResponse.setUserId(user.getAppUserId());
+        userResponse.setUsername(user.getUserId());
         userResponse.setEmail(user.getEmail());
         userResponse.setRole(user.getRoles());
         return userResponse;

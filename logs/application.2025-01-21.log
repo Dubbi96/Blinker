@@ -1,0 +1,54 @@
+2025-01-21 22:45:12 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-01-21 22:45:12 [restartedMain] INFO  com.blinker.atom.AtomApplication - Starting AtomApplication using Java 17.0.13 with PID 5955 (/Users/gangjong-won/Dubbi/Blinker/atom/build/classes/java/main started by gangjong-won in /Users/gangjong-won/Dubbi/Blinker/atom)
+2025-01-21 22:45:12 [restartedMain] DEBUG com.blinker.atom.AtomApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-21 22:45:12 [restartedMain] INFO  com.blinker.atom.AtomApplication - The following 1 profile is active: "dev"
+2025-01-21 22:45:12 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-21 22:45:12 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-21 22:45:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-21 22:45:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 7 JPA repository interfaces.
+2025-01-21 22:45:13 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-01-21 22:45:13 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-21 22:45:13 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-21 22:45:13 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-21 22:45:13 [restartedMain] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-01-21 22:45:13 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-21 22:45:13 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 677 ms
+2025-01-21 22:45:13 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-21 22:45:13 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-21 22:45:13 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-21 22:45:13 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-21 22:45:13 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@64216d51
+2025-01-21 22:45:13 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-21 22:45:13 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-21 22:45:13 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.15
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-21 22:45:13 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-21 22:45:13 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-21 22:45:14 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-21 22:45:14 [restartedMain] DEBUG c.b.a.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-01-21 22:45:14 [restartedMain] DEBUG c.b.a.c.error.ExceptionHandlerFilter - Filter 'exceptionHandlerFilter' configured for use
+2025-01-21 22:45:14 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-01-21 22:45:14 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-21 22:45:14 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-21 22:45:14 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-01-21 22:45:14 [restartedMain] INFO  com.blinker.atom.AtomApplication - Started AtomApplication in 2.19 seconds (process running for 2.475)
+2025-01-21 22:45:18 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-21 22:45:18 [http-nio-8080-exec-2] DEBUG c.b.a.c.s.JwtAuthenticationFilter - JWT 토큰이 없거나 유효하지 않음: null
+2025-01-21 22:45:18 [http-nio-8080-exec-2] INFO  c.b.atom.controller.AuthController - 로그인 요청 받음: aaa
+2025-01-21 22:45:19 [http-nio-8080-exec-4] INFO  c.b.a.c.s.JwtAuthenticationFilter - 토큰 검증 성공: 'eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIkFETUlOIl0sInVzZXJJZCI6NywidXNlcm5hbWUiOiJhYWEiLCJpYXQiOjE3Mzc0NjcxMTgsImV4cCI6MTczODY3NjcxOH0.4Bu6B1o0k0BI86fxi-8M70hilzZwsdRwdqIODR0cYJRlhVOETfgc9jvP8hhakEk8bNwHvh9ue8qdMTBldR04ZQ'
+2025-01-21 22:45:19 [http-nio-8080-exec-4] INFO  c.b.atom.controller.SensorController - 전체 조회 : /api/sensors
+2025-01-21 22:45:29 [http-nio-8080-exec-6] INFO  c.b.a.c.s.JwtAuthenticationFilter - 토큰 검증 성공: 'eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIkFETUlOIl0sInVzZXJJZCI6NywidXNlcm5hbWUiOiJhYWEiLCJpYXQiOjE3Mzc0NjcxMTgsImV4cCI6MTczODY3NjcxOH0.4Bu6B1o0k0BI86fxi-8M70hilzZwsdRwdqIODR0cYJRlhVOETfgc9jvP8hhakEk8bNwHvh9ue8qdMTBldR04ZQ'
+2025-01-21 22:45:29 [http-nio-8080-exec-6] INFO  c.b.atom.controller.SensorController - 전체 조회 : /api/sensors
+2025-01-21 22:48:17 [http-nio-8080-exec-9] INFO  c.b.a.c.s.JwtAuthenticationFilter - 토큰 검증 성공: 'eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIkFETUlOIl0sInVzZXJJZCI6NywidXNlcm5hbWUiOiJhYWEiLCJpYXQiOjE3Mzc0NjcxMTgsImV4cCI6MTczODY3NjcxOH0.4Bu6B1o0k0BI86fxi-8M70hilzZwsdRwdqIODR0cYJRlhVOETfgc9jvP8hhakEk8bNwHvh9ue8qdMTBldR04ZQ'
+2025-01-21 22:48:17 [http-nio-8080-exec-9] INFO  c.b.atom.controller.SensorController - 전체 조회 : /api/sensors
+2025-01-21 22:50:30 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-21 22:50:30 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-01-21 22:50:30 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-21 22:50:30 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-21 22:50:30 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

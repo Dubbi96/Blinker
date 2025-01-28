@@ -1,0 +1,920 @@
+2025-01-24 22:03:04 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-01-24 22:03:04 [restartedMain] INFO  com.blinker.atom.AtomApplication - Starting AtomApplication using Java 17.0.13 with PID 10368 (/Users/gangjong-won/Dubbi/Blinker/atom/build/classes/java/main started by gangjong-won in /Users/gangjong-won/Dubbi/Blinker/atom)
+2025-01-24 22:03:04 [restartedMain] DEBUG com.blinker.atom.AtomApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-24 22:03:04 [restartedMain] INFO  com.blinker.atom.AtomApplication - The following 1 profile is active: "dev"
+2025-01-24 22:03:04 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-24 22:03:04 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-24 22:03:05 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-24 22:03:05 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 7 JPA repository interfaces.
+2025-01-24 22:03:05 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-01-24 22:03:05 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-24 22:03:05 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-24 22:03:05 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-24 22:03:05 [restartedMain] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-01-24 22:03:05 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-24 22:03:05 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 724 ms
+2025-01-24 22:03:05 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-24 22:03:05 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-24 22:03:05 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-24 22:03:05 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-24 22:03:05 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3d8f6da2
+2025-01-24 22:03:05 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-24 22:03:05 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-24 22:03:05 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.15
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-24 22:03:05 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-24 22:03:06 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-24 22:03:06 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-24 22:03:06 [restartedMain] DEBUG c.b.a.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-01-24 22:03:06 [restartedMain] DEBUG c.b.a.c.error.ExceptionHandlerFilter - Filter 'exceptionHandlerFilter' configured for use
+2025-01-24 22:03:06 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-01-24 22:03:06 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-24 22:03:06 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-24 22:03:06 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-01-24 22:03:06 [restartedMain] INFO  com.blinker.atom.AtomApplication - Started AtomApplication in 2.298 seconds (process running for 2.576)
+2025-01-24 22:03:59 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-24 22:03:59 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-01-24 22:03:59 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-24 22:03:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-24 22:03:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-01-24 22:04:01 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-01-24 22:04:01 [restartedMain] INFO  com.blinker.atom.AtomApplication - Starting AtomApplication using Java 17.0.13 with PID 10405 (/Users/gangjong-won/Dubbi/Blinker/atom/build/classes/java/main started by gangjong-won in /Users/gangjong-won/Dubbi/Blinker/atom)
+2025-01-24 22:04:01 [restartedMain] DEBUG com.blinker.atom.AtomApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-24 22:04:01 [restartedMain] INFO  com.blinker.atom.AtomApplication - The following 1 profile is active: "dev"
+2025-01-24 22:04:01 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-24 22:04:01 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-24 22:04:01 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-24 22:04:01 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 7 JPA repository interfaces.
+2025-01-24 22:04:01 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-01-24 22:04:01 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-24 22:04:01 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-24 22:04:01 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-24 22:04:01 [restartedMain] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-01-24 22:04:01 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-24 22:04:01 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 697 ms
+2025-01-24 22:04:01 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-24 22:04:01 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-24 22:04:01 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-24 22:04:01 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-24 22:04:01 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@26f70566
+2025-01-24 22:04:01 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-24 22:04:01 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-24 22:04:01 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.15
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-24 22:04:02 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-24 22:04:02 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-24 22:04:02 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-24 22:04:02 [restartedMain] DEBUG c.b.a.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-01-24 22:04:02 [restartedMain] DEBUG c.b.a.c.error.ExceptionHandlerFilter - Filter 'exceptionHandlerFilter' configured for use
+2025-01-24 22:04:02 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-01-24 22:04:02 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-24 22:04:02 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-24 22:04:03 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-01-24 22:04:03 [restartedMain] INFO  com.blinker.atom.AtomApplication - Started AtomApplication in 2.135 seconds (process running for 2.378)
+2025-01-24 22:05:01 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-24 22:05:01 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-01-24 22:05:01 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-24 22:05:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-24 22:05:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-01-24 22:05:02 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-01-24 22:05:03 [restartedMain] INFO  com.blinker.atom.AtomApplication - Starting AtomApplication using Java 17.0.13 with PID 10433 (/Users/gangjong-won/Dubbi/Blinker/atom/build/classes/java/main started by gangjong-won in /Users/gangjong-won/Dubbi/Blinker/atom)
+2025-01-24 22:05:03 [restartedMain] DEBUG com.blinker.atom.AtomApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-24 22:05:03 [restartedMain] INFO  com.blinker.atom.AtomApplication - The following 1 profile is active: "dev"
+2025-01-24 22:05:03 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-24 22:05:03 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-24 22:05:03 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-24 22:05:03 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 7 JPA repository interfaces.
+2025-01-24 22:05:03 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-01-24 22:05:03 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-24 22:05:03 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-24 22:05:03 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-24 22:05:03 [restartedMain] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-01-24 22:05:03 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-24 22:05:03 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 600 ms
+2025-01-24 22:05:03 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-24 22:05:03 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-24 22:05:03 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-24 22:05:03 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-24 22:05:03 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@89c9899
+2025-01-24 22:05:03 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-24 22:05:03 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-24 22:05:03 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.15
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-24 22:05:03 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-24 22:05:04 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-24 22:05:04 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-24 22:05:04 [restartedMain] DEBUG c.b.a.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-01-24 22:05:04 [restartedMain] DEBUG c.b.a.c.error.ExceptionHandlerFilter - Filter 'exceptionHandlerFilter' configured for use
+2025-01-24 22:05:04 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-01-24 22:05:04 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-24 22:05:04 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-24 22:05:04 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-01-24 22:05:04 [restartedMain] INFO  com.blinker.atom.AtomApplication - Started AtomApplication in 1.978 seconds (process running for 2.202)
+2025-01-24 22:06:24 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-24 22:06:24 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-01-24 22:06:24 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-24 22:06:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-24 22:06:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-01-24 22:06:26 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-01-24 22:06:26 [restartedMain] INFO  com.blinker.atom.AtomApplication - Starting AtomApplication using Java 17.0.13 with PID 10480 (/Users/gangjong-won/Dubbi/Blinker/atom/build/classes/java/main started by gangjong-won in /Users/gangjong-won/Dubbi/Blinker/atom)
+2025-01-24 22:06:26 [restartedMain] DEBUG com.blinker.atom.AtomApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-24 22:06:26 [restartedMain] INFO  com.blinker.atom.AtomApplication - The following 1 profile is active: "dev"
+2025-01-24 22:06:26 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-24 22:06:26 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-24 22:06:26 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-24 22:06:26 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 7 JPA repository interfaces.
+2025-01-24 22:06:27 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-01-24 22:06:27 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-24 22:06:27 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-24 22:06:27 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-24 22:06:27 [restartedMain] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-01-24 22:06:27 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-24 22:06:27 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 866 ms
+2025-01-24 22:06:27 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-24 22:06:27 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-24 22:06:27 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-24 22:06:27 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-24 22:06:27 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b7c7f80
+2025-01-24 22:06:27 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-24 22:06:27 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-24 22:06:27 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.15
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-24 22:06:27 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-24 22:06:27 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-24 22:06:28 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-24 22:06:28 [restartedMain] DEBUG c.b.a.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-01-24 22:06:28 [restartedMain] DEBUG c.b.a.c.error.ExceptionHandlerFilter - Filter 'exceptionHandlerFilter' configured for use
+2025-01-24 22:06:28 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-01-24 22:06:28 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-24 22:06:28 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-24 22:06:28 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-01-24 22:06:28 [restartedMain] INFO  com.blinker.atom.AtomApplication - Started AtomApplication in 2.366 seconds (process running for 2.577)
+2025-01-24 22:06:34 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-24 22:06:34 [http-nio-8080-exec-1] DEBUG c.b.a.c.s.JwtAuthenticationFilter - JWT 토큰이 없거나 유효하지 않음: null
+2025-01-24 22:06:43 [http-nio-8080-exec-3] DEBUG c.b.a.c.s.JwtAuthenticationFilter - JWT 토큰이 없거나 유효하지 않음: null
+2025-01-24 22:06:43 [http-nio-8080-exec-3] INFO  c.b.atom.controller.AuthController - 로그인 요청 받음: aaa
+2025-01-24 22:07:12 [http-nio-8080-exec-4] DEBUG c.b.a.c.s.JwtAuthenticationFilter - JWT 토큰이 없거나 유효하지 않음: eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIkFETUlOIl0sInVzZXJJZCI6NywidXNlcm5hbWUiOiJhYWEiLCJpYXQiOjE3Mzc3MjQwMDMsImV4cCI6MTczODkzMzYwM30.qK5QzxuSiMesxY1pykSbffZynzI7AiBR8g6Tu7N_xQfsmn4nu4evHdCh6VKOvmlsnwQ1-3T_49cMgseQqdHy1A
+2025-01-24 22:07:28 [http-nio-8080-exec-5] INFO  c.b.a.c.s.JwtAuthenticationFilter - 토큰 검증 성공: 'eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIkFETUlOIl0sInVzZXJJZCI6NywidXNlcm5hbWUiOiJhYWEiLCJpYXQiOjE3Mzc3MjQwMDMsImV4cCI6MTczODkzMzYwM30.qK5QzxuSiMesxY1pykSbffZynzI7AiBR8g6Tu7N_xQfsmn4nu4evHdCh6VKOvmlsnwQ1-3T_49cMgseQqdHy1A'
+2025-01-24 22:07:28 [http-nio-8080-exec-5] ERROR c.b.a.c.error.GlobalExceptionHandler - 400  on GET request for "http://thingplugpf.sktiot.com:9000/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa": [no body]
+java.lang.IllegalArgumentException: 400  on GET request for "http://thingplugpf.sktiot.com:9000/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa": [no body]
+	at com.blinker.atom.controller.ThingPlugController.getLatestContent(ThingPlugController.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.blinker.atom.config.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.blinker.atom.config.error.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:29)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-01-24 22:09:03 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-24 22:09:03 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-01-24 22:09:03 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-24 22:09:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-24 22:09:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-01-24 22:09:52 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-01-24 22:09:52 [restartedMain] INFO  com.blinker.atom.AtomApplication - Starting AtomApplication using Java 17.0.13 with PID 10559 (/Users/gangjong-won/Dubbi/Blinker/atom/build/classes/java/main started by gangjong-won in /Users/gangjong-won/Dubbi/Blinker/atom)
+2025-01-24 22:09:52 [restartedMain] DEBUG com.blinker.atom.AtomApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-24 22:09:52 [restartedMain] INFO  com.blinker.atom.AtomApplication - The following 1 profile is active: "dev"
+2025-01-24 22:09:52 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-24 22:09:52 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-24 22:09:53 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-24 22:09:53 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 7 JPA repository interfaces.
+2025-01-24 22:09:53 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-01-24 22:09:53 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-24 22:09:53 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-24 22:09:53 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-24 22:09:53 [restartedMain] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-01-24 22:09:53 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-24 22:09:53 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 726 ms
+2025-01-24 22:09:53 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-24 22:09:53 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-24 22:09:53 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-24 22:09:53 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-24 22:09:53 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4997b8f9
+2025-01-24 22:09:53 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-24 22:09:53 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-24 22:09:53 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.15
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-24 22:09:53 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-24 22:09:54 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-24 22:09:54 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-24 22:09:54 [restartedMain] DEBUG c.b.a.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-01-24 22:09:54 [restartedMain] DEBUG c.b.a.c.error.ExceptionHandlerFilter - Filter 'exceptionHandlerFilter' configured for use
+2025-01-24 22:09:54 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-01-24 22:09:54 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-24 22:09:54 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-24 22:09:54 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-01-24 22:09:54 [restartedMain] INFO  com.blinker.atom.AtomApplication - Started AtomApplication in 2.183 seconds (process running for 2.393)
+2025-01-24 22:10:04 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-24 22:10:04 [http-nio-8080-exec-2] INFO  c.b.a.c.s.JwtAuthenticationFilter - 토큰 검증 성공: 'eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIkFETUlOIl0sInVzZXJJZCI6NywidXNlcm5hbWUiOiJhYWEiLCJpYXQiOjE3Mzc3MjQwMDMsImV4cCI6MTczODkzMzYwM30.qK5QzxuSiMesxY1pykSbffZynzI7AiBR8g6Tu7N_xQfsmn4nu4evHdCh6VKOvmlsnwQ1-3T_49cMgseQqdHy1A'
+2025-01-24 22:10:04 [http-nio-8080-exec-2] ERROR c.b.a.c.error.GlobalExceptionHandler - 400 Bad Request: Check remoteCSE ID or request parameters.
+java.lang.IllegalArgumentException: 400 Bad Request: Check remoteCSE ID or request parameters.
+	at com.blinker.atom.controller.ThingPlugController.getLatestContent(ThingPlugController.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.blinker.atom.config.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.blinker.atom.config.error.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:29)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-01-24 22:14:46 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-24 22:14:46 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-01-24 22:14:46 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-24 22:14:46 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-24 22:14:46 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-01-24 22:14:48 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-01-24 22:14:48 [restartedMain] INFO  com.blinker.atom.AtomApplication - Starting AtomApplication using Java 17.0.13 with PID 10668 (/Users/gangjong-won/Dubbi/Blinker/atom/build/classes/java/main started by gangjong-won in /Users/gangjong-won/Dubbi/Blinker/atom)
+2025-01-24 22:14:48 [restartedMain] DEBUG com.blinker.atom.AtomApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-24 22:14:48 [restartedMain] INFO  com.blinker.atom.AtomApplication - The following 1 profile is active: "dev"
+2025-01-24 22:14:48 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-24 22:14:48 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-24 22:14:48 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-24 22:14:48 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 7 JPA repository interfaces.
+2025-01-24 22:14:49 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-01-24 22:14:49 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-24 22:14:49 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-24 22:14:49 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-24 22:14:49 [restartedMain] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-01-24 22:14:49 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-24 22:14:49 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 794 ms
+2025-01-24 22:14:49 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-24 22:14:49 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-24 22:14:49 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-24 22:14:49 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-24 22:14:49 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@93b184f
+2025-01-24 22:14:49 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-24 22:14:49 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-24 22:14:49 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.15
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-24 22:14:49 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-24 22:14:50 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-24 22:14:50 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-24 22:14:50 [restartedMain] DEBUG c.b.a.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-01-24 22:14:50 [restartedMain] DEBUG c.b.a.c.error.ExceptionHandlerFilter - Filter 'exceptionHandlerFilter' configured for use
+2025-01-24 22:14:50 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-01-24 22:14:50 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-24 22:14:50 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-24 22:14:50 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-01-24 22:14:50 [restartedMain] INFO  com.blinker.atom.AtomApplication - Started AtomApplication in 2.461 seconds (process running for 2.692)
+2025-01-24 22:15:57 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-24 22:15:57 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-01-24 22:15:57 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-24 22:15:57 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-24 22:15:57 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-01-24 22:15:59 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-01-24 22:15:59 [restartedMain] INFO  com.blinker.atom.AtomApplication - Starting AtomApplication using Java 17.0.13 with PID 10700 (/Users/gangjong-won/Dubbi/Blinker/atom/build/classes/java/main started by gangjong-won in /Users/gangjong-won/Dubbi/Blinker/atom)
+2025-01-24 22:15:59 [restartedMain] DEBUG com.blinker.atom.AtomApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-24 22:15:59 [restartedMain] INFO  com.blinker.atom.AtomApplication - The following 1 profile is active: "dev"
+2025-01-24 22:15:59 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-24 22:15:59 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-24 22:15:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-24 22:15:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 7 JPA repository interfaces.
+2025-01-24 22:16:00 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-01-24 22:16:00 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-24 22:16:00 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-24 22:16:00 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-24 22:16:00 [restartedMain] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-01-24 22:16:00 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-24 22:16:00 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 610 ms
+2025-01-24 22:16:00 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-24 22:16:00 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-24 22:16:00 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-24 22:16:00 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-24 22:16:00 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6b4626ee
+2025-01-24 22:16:00 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-24 22:16:00 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-24 22:16:00 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.15
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-24 22:16:00 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-24 22:16:00 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-24 22:16:00 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-24 22:16:01 [restartedMain] DEBUG c.b.a.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-01-24 22:16:01 [restartedMain] DEBUG c.b.a.c.error.ExceptionHandlerFilter - Filter 'exceptionHandlerFilter' configured for use
+2025-01-24 22:16:01 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-01-24 22:16:01 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-24 22:16:01 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-24 22:16:01 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-01-24 22:16:01 [restartedMain] INFO  com.blinker.atom.AtomApplication - Started AtomApplication in 2.029 seconds (process running for 2.245)
+2025-01-24 22:16:06 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-24 22:16:06 [http-nio-8080-exec-2] INFO  c.b.a.c.s.JwtAuthenticationFilter - 토큰 검증 성공: 'eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIkFETUlOIl0sInVzZXJJZCI6NywidXNlcm5hbWUiOiJhYWEiLCJpYXQiOjE3Mzc3MjQwMDMsImV4cCI6MTczODkzMzYwM30.qK5QzxuSiMesxY1pykSbffZynzI7AiBR8g6Tu7N_xQfsmn4nu4evHdCh6VKOvmlsnwQ1-3T_49cMgseQqdHy1A'
+2025-01-24 22:16:06 [http-nio-8080-exec-2] INFO  c.b.atom.service.ThingPlugService - Fetching latest content instance from URL: http://thingplugpf.sktiot.com:9000/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa?fu=1&ty=4
+2025-01-24 22:16:06 [http-nio-8080-exec-2] DEBUG c.b.atom.service.ThingPlugService - Request headers: X-M2M-Origin=ThingPlug, uKey=YVlMR2V6cEpiVkV1VVMyWlFuN3F5YjAwSGVidGxSdzk2eWVWNU9GQnRReW50V3R2QWIxajgyakVYc3hlTTErcQ==, ri=123456789
+2025-01-24 22:16:06 [http-nio-8080-exec-2] INFO  c.b.atom.service.ThingPlugService - Response for latest content instance: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><m2m:uril xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178936126 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178929426 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178922850 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178916165 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178909591 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178902957 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061174135215 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061174128544 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061174121850 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173777157 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173773488 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173764274 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173757470 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061169524054 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061169520080 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160363575 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160357342 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160351239 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160344876 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160338755 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160332405 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061151569903 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061151563549</m2m:uril>
+2025-01-24 22:20:37 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-24 22:20:37 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-01-24 22:20:37 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-24 22:20:37 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-24 22:20:37 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-01-24 22:31:36 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-01-24 22:31:36 [restartedMain] INFO  com.blinker.atom.AtomApplication - Starting AtomApplication using Java 17.0.13 with PID 10849 (/Users/gangjong-won/Dubbi/Blinker/atom/build/classes/java/main started by gangjong-won in /Users/gangjong-won/Dubbi/Blinker/atom)
+2025-01-24 22:31:36 [restartedMain] DEBUG com.blinker.atom.AtomApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-24 22:31:36 [restartedMain] INFO  com.blinker.atom.AtomApplication - The following 1 profile is active: "dev"
+2025-01-24 22:31:36 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-24 22:31:36 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-24 22:31:36 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-24 22:31:36 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 7 JPA repository interfaces.
+2025-01-24 22:31:37 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-01-24 22:31:37 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-24 22:31:37 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-24 22:31:37 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-24 22:31:37 [restartedMain] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-01-24 22:31:37 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-24 22:31:37 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 694 ms
+2025-01-24 22:31:37 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-24 22:31:37 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-24 22:31:37 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-24 22:31:37 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-24 22:31:37 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@8b6c15d
+2025-01-24 22:31:37 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-24 22:31:37 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-24 22:31:37 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.15
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-24 22:31:37 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-24 22:31:37 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-24 22:31:37 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-24 22:31:38 [restartedMain] DEBUG c.b.a.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-01-24 22:31:38 [restartedMain] DEBUG c.b.a.c.error.ExceptionHandlerFilter - Filter 'exceptionHandlerFilter' configured for use
+2025-01-24 22:31:38 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-01-24 22:31:38 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-24 22:31:38 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-24 22:31:38 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-01-24 22:31:38 [restartedMain] INFO  com.blinker.atom.AtomApplication - Started AtomApplication in 2.126 seconds (process running for 2.338)
+2025-01-24 22:31:41 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-24 22:31:41 [http-nio-8080-exec-2] INFO  c.b.a.c.s.JwtAuthenticationFilter - 토큰 검증 성공: 'eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIkFETUlOIl0sInVzZXJJZCI6NywidXNlcm5hbWUiOiJhYWEiLCJpYXQiOjE3Mzc3MjQwMDMsImV4cCI6MTczODkzMzYwM30.qK5QzxuSiMesxY1pykSbffZynzI7AiBR8g6Tu7N_xQfsmn4nu4evHdCh6VKOvmlsnwQ1-3T_49cMgseQqdHy1A'
+2025-01-24 22:31:41 [http-nio-8080-exec-2] INFO  c.b.atom.service.ThingPlugService - Fetching Content Instance list from URL: http://thingplugpf.sktiot.com:9000/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa?fu=1&ty=4
+2025-01-24 22:31:41 [http-nio-8080-exec-2] DEBUG c.b.atom.service.ThingPlugService - Content Instance List Response: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><m2m:uril xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178936126 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178929426 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178922850 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178916165 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178909591 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178902957 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061174135215 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061174128544 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061174121850 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173777157 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173773488 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173764274 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173757470 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061169524054 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061169520080 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160363575 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160357342 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160351239 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160344876 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160338755 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160332405 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061151569903 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061151563549</m2m:uril>
+2025-01-24 22:31:41 [http-nio-8080-exec-2] INFO  c.b.atom.service.ThingPlugService - Latest Content Instance URI: /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178936126 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178929426 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178922850 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178916165 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178909591 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178902957 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061174135215 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061174128544 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061174121850 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173777157 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173773488 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173764274 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173757470 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061169524054 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061169520080 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160363575 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160357342 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160351239 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160344876 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160338755 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160332405 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061151569903 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061151563549
+2025-01-24 22:31:41 [http-nio-8080-exec-2] INFO  c.b.atom.service.ThingPlugService - Fetching latest Content Instance data from URL: http://thingplugpf.sktiot.com:9000/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178936126 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178929426 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178922850 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178916165 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178909591 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178902957 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061174135215 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061174128544 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061174121850 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173777157 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173773488 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173764274 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173757470 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061169524054 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061169520080 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160363575 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160357342 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160351239 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160344876 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160338755 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160332405 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061151569903 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061151563549
+2025-01-24 22:31:41 [http-nio-8080-exec-2] ERROR c.b.atom.service.ThingPlugService - HTTP Error during Content Instance processing. Status: 404 NOT_FOUND, Error: 
+2025-01-24 22:31:41 [http-nio-8080-exec-2] ERROR c.b.a.c.error.GlobalExceptionHandler - 404  on GET request for "http://thingplugpf.sktiot.com:9000/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178936126/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178929426/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178922850/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178916165/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178909591/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178902957/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061174135215/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061174128544/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061174121850/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173777157/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173773488/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173764274/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173757470/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061169524054/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061169520080/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160363575/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160357342/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160351239/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160344876/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160338755/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160332405/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061151569903/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061151563549": [no body]
+java.lang.IllegalArgumentException: 404  on GET request for "http://thingplugpf.sktiot.com:9000/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178936126/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178929426/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178922850/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178916165/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178909591/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178902957/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061174135215/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061174128544/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061174121850/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173777157/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173773488/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173764274/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173757470/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061169524054/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061169520080/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160363575/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160357342/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160351239/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160344876/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160338755/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160332405/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061151569903/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061151563549": [no body]
+	at com.blinker.atom.controller.ThingPlugController.getLatestContent(ThingPlugController.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.blinker.atom.config.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.blinker.atom.config.error.ExceptionHandlerFilter.doFilterInternal(ExceptionHandlerFilter.java:29)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-01-24 22:33:40 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-24 22:33:40 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-01-24 22:33:40 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-24 22:33:40 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-24 22:33:40 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-01-24 22:33:42 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-01-24 22:33:42 [restartedMain] INFO  com.blinker.atom.AtomApplication - Starting AtomApplication using Java 17.0.13 with PID 10901 (/Users/gangjong-won/Dubbi/Blinker/atom/build/classes/java/main started by gangjong-won in /Users/gangjong-won/Dubbi/Blinker/atom)
+2025-01-24 22:33:42 [restartedMain] DEBUG com.blinker.atom.AtomApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-24 22:33:42 [restartedMain] INFO  com.blinker.atom.AtomApplication - The following 1 profile is active: "dev"
+2025-01-24 22:33:42 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-24 22:33:42 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-24 22:33:42 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-24 22:33:42 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 7 JPA repository interfaces.
+2025-01-24 22:33:42 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-01-24 22:33:42 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-24 22:33:42 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-24 22:33:42 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-24 22:33:42 [restartedMain] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-01-24 22:33:42 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-24 22:33:42 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 622 ms
+2025-01-24 22:33:42 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-24 22:33:42 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-24 22:33:42 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-24 22:33:42 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-24 22:33:42 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@38efef39
+2025-01-24 22:33:42 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-24 22:33:42 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-24 22:33:42 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.15
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-24 22:33:42 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-24 22:33:43 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-24 22:33:43 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-24 22:33:43 [restartedMain] DEBUG c.b.a.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-01-24 22:33:43 [restartedMain] DEBUG c.b.a.c.error.ExceptionHandlerFilter - Filter 'exceptionHandlerFilter' configured for use
+2025-01-24 22:33:43 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-01-24 22:33:43 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-24 22:33:43 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-24 22:33:43 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-01-24 22:33:43 [restartedMain] INFO  com.blinker.atom.AtomApplication - Started AtomApplication in 1.984 seconds (process running for 2.193)
+2025-01-24 22:33:47 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-24 22:33:47 [http-nio-8080-exec-2] INFO  c.b.a.c.s.JwtAuthenticationFilter - 토큰 검증 성공: 'eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIkFETUlOIl0sInVzZXJJZCI6NywidXNlcm5hbWUiOiJhYWEiLCJpYXQiOjE3Mzc3MjQwMDMsImV4cCI6MTczODkzMzYwM30.qK5QzxuSiMesxY1pykSbffZynzI7AiBR8g6Tu7N_xQfsmn4nu4evHdCh6VKOvmlsnwQ1-3T_49cMgseQqdHy1A'
+2025-01-24 22:33:47 [http-nio-8080-exec-2] INFO  c.b.atom.service.ThingPlugService - Fetching Content Instance list from URL: http://thingplugpf.sktiot.com:9000/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa?fu=1&ty=4
+2025-01-24 22:33:47 [http-nio-8080-exec-2] DEBUG c.b.atom.service.ThingPlugService - Content Instance List Response: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><m2m:uril xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178936126 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178929426 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178922850 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178916165 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178909591 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178902957 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061174135215 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061174128544 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061174121850 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173777157 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173773488 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173764274 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173757470 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061169524054 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061169520080 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160363575 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160357342 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160351239 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160344876 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160338755 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160332405 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061151569903 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061151563549</m2m:uril>
+2025-01-24 22:33:47 [http-nio-8080-exec-2] INFO  c.b.atom.service.ThingPlugService - Latest Content Instance URI: /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178936126
+2025-01-24 22:33:47 [http-nio-8080-exec-2] INFO  c.b.atom.service.ThingPlugService - Fetching latest Content Instance data from URL: http://thingplugpf.sktiot.com:9000/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178936126
+2025-01-24 22:33:47 [http-nio-8080-exec-2] DEBUG c.b.atom.service.ThingPlugService - Latest Content Instance Response: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><ty>4</ty><ri>CI00000000061178936126</ri><rn>CI00000000061178936126</rn><pi>CT00000000000001162261</pi><ct>2025-01-24T16:42:20+09:00</ct><lt>2025-01-24T16:42:21+09:00</lt><ppt><gwl>37.197789,127.047170,0</gwl><geui>f4d9fbfffe845651</geui><devl>37.197789,127.047170,0</devl><fp>1</fp><trid></trid><plidx>0</plidx><ctype>11</ctype><fixType>7</fixType><result>0</result><accuracy>3000</accuracy></ppt><et>2025-01-25T16:42:20+09:00</et><st>4389</st><cr>RC00000000000001230554</cr><cnf>LoRa/Sensor</cnf><cs>102</cs><con>67d1f11dfe034a32853200000000006304040404040404050507079000001400011802cef11dfe040300000000000000000016</con><containerCurrentByteSize>447486</containerCurrentByteSize></m2m:cin>
+2025-01-24 22:33:47 [http-nio-8080-exec-2] INFO  c.b.atom.service.ThingPlugService - Extracted <con> data: 67d1f11dfe034a32853200000000006304040404040404050507079000001400011802cef11dfe040300000000000000000016
+2025-01-24 22:37:06 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-24 22:37:06 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-01-24 22:37:06 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-24 22:37:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-24 22:37:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-01-24 22:37:07 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-01-24 22:37:07 [restartedMain] INFO  com.blinker.atom.AtomApplication - Starting AtomApplication using Java 17.0.13 with PID 10971 (/Users/gangjong-won/Dubbi/Blinker/atom/build/classes/java/main started by gangjong-won in /Users/gangjong-won/Dubbi/Blinker/atom)
+2025-01-24 22:37:07 [restartedMain] DEBUG com.blinker.atom.AtomApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-24 22:37:07 [restartedMain] INFO  com.blinker.atom.AtomApplication - The following 1 profile is active: "dev"
+2025-01-24 22:37:07 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-24 22:37:07 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-24 22:37:07 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-24 22:37:07 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 7 JPA repository interfaces.
+2025-01-24 22:37:08 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-01-24 22:37:08 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-24 22:37:08 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-24 22:37:08 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-24 22:37:08 [restartedMain] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-01-24 22:37:08 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-24 22:37:08 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 724 ms
+2025-01-24 22:37:08 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-24 22:37:08 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-24 22:37:08 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-24 22:37:08 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-24 22:37:08 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@981b301
+2025-01-24 22:37:08 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-24 22:37:08 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-24 22:37:08 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.15
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-24 22:37:08 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-24 22:37:09 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-24 22:37:09 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-24 22:37:09 [restartedMain] DEBUG c.b.a.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-01-24 22:37:09 [restartedMain] DEBUG c.b.a.c.error.ExceptionHandlerFilter - Filter 'exceptionHandlerFilter' configured for use
+2025-01-24 22:37:09 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-01-24 22:37:09 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-24 22:37:09 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-24 22:37:09 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-01-24 22:37:09 [restartedMain] INFO  com.blinker.atom.AtomApplication - Started AtomApplication in 2.333 seconds (process running for 2.58)
+2025-01-24 22:37:13 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-24 22:37:13 [http-nio-8080-exec-2] INFO  c.b.a.c.s.JwtAuthenticationFilter - 토큰 검증 성공: 'eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIkFETUlOIl0sInVzZXJJZCI6NywidXNlcm5hbWUiOiJhYWEiLCJpYXQiOjE3Mzc3MjQwMDMsImV4cCI6MTczODkzMzYwM30.qK5QzxuSiMesxY1pykSbffZynzI7AiBR8g6Tu7N_xQfsmn4nu4evHdCh6VKOvmlsnwQ1-3T_49cMgseQqdHy1A'
+2025-01-24 22:37:13 [http-nio-8080-exec-2] INFO  c.b.atom.service.ThingPlugService - Fetching Content Instance list from URL: http://thingplugpf.sktiot.com:9000/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa?fu=1&ty=4
+2025-01-24 22:37:13 [http-nio-8080-exec-2] DEBUG c.b.atom.service.ThingPlugService - Content Instance List Response: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><m2m:uril xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178936126 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178929426 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178922850 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178916165 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178909591 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178902957 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061174135215 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061174128544 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061174121850 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173777157 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173773488 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173764274 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173757470 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061169524054 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061169520080 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160363575 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160357342 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160351239 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160344876 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160338755 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160332405 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061151569903 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061151563549</m2m:uril>
+2025-01-24 22:37:13 [http-nio-8080-exec-2] INFO  c.b.atom.service.ThingPlugService - Latest Content Instance URI: /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178936126
+2025-01-24 22:37:13 [http-nio-8080-exec-2] INFO  c.b.atom.service.ThingPlugService - Fetching latest Content Instance data from URL: http://thingplugpf.sktiot.com:9000/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178936126
+2025-01-24 22:37:13 [http-nio-8080-exec-2] DEBUG c.b.atom.service.ThingPlugService - Latest Content Instance Response: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><ty>4</ty><ri>CI00000000061178936126</ri><rn>CI00000000061178936126</rn><pi>CT00000000000001162261</pi><ct>2025-01-24T16:42:20+09:00</ct><lt>2025-01-24T16:42:21+09:00</lt><ppt><gwl>37.197789,127.047170,0</gwl><geui>f4d9fbfffe845651</geui><devl>37.197789,127.047170,0</devl><fp>1</fp><trid></trid><plidx>0</plidx><ctype>11</ctype><fixType>7</fixType><result>0</result><accuracy>3000</accuracy></ppt><et>2025-01-25T16:42:20+09:00</et><st>4389</st><cr>RC00000000000001230554</cr><cnf>LoRa/Sensor</cnf><cs>102</cs><con>67d1f11dfe034a32853200000000006304040404040404050507079000001400011802cef11dfe040300000000000000000016</con><containerCurrentByteSize>447486</containerCurrentByteSize></m2m:cin>
+2025-01-24 22:37:13 [http-nio-8080-exec-2] INFO  c.b.atom.service.ThingPlugService - Extracted <con> data: 67d1f11dfe034a32853200000000006304040404040404050507079000001400011802cef11dfe040300000000000000000016
+2025-01-24 22:41:13 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-01-24 22:41:13 [Thread-5] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-24 22:41:13 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-01-24 22:41:13 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-01-24 22:41:13 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-01-24 22:41:13 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-24 22:41:13 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-24 22:41:13 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-01-24 22:41:14 [restartedMain] INFO  com.blinker.atom.AtomApplication - Starting AtomApplication using Java 17.0.13 with PID 10971 (/Users/gangjong-won/Dubbi/Blinker/atom/build/classes/java/main started by gangjong-won in /Users/gangjong-won/Dubbi/Blinker/atom)
+2025-01-24 22:41:14 [restartedMain] DEBUG com.blinker.atom.AtomApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-24 22:41:14 [restartedMain] INFO  com.blinker.atom.AtomApplication - The following 1 profile is active: "dev"
+2025-01-24 22:41:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-24 22:41:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 7 JPA repository interfaces.
+2025-01-24 22:41:14 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-01-24 22:41:14 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-24 22:41:14 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-24 22:41:14 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-24 22:41:14 [restartedMain] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-01-24 22:41:14 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-24 22:41:14 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 147 ms
+2025-01-24 22:41:14 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-24 22:41:14 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-24 22:41:14 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-01-24 22:41:14 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@35f9ec89
+2025-01-24 22:41:14 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-01-24 22:41:14 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-24 22:41:14 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 14.15
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-24 22:41:14 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-24 22:41:14 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-24 22:41:14 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-24 22:41:14 [restartedMain] DEBUG c.b.a.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-01-24 22:41:14 [restartedMain] DEBUG c.b.a.c.error.ExceptionHandlerFilter - Filter 'exceptionHandlerFilter' configured for use
+2025-01-24 22:41:14 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-01-24 22:41:14 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-24 22:41:14 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-24 22:41:14 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-01-24 22:41:14 [restartedMain] INFO  com.blinker.atom.AtomApplication - Started AtomApplication in 0.506 seconds (process running for 247.447)
+2025-01-24 22:41:14 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-01-24 22:43:14 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-24 22:43:14 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-01-24 22:43:14 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-24 22:43:14 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-01-24 22:43:14 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-01-24 22:43:16 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-01-24 22:43:16 [restartedMain] INFO  com.blinker.atom.AtomApplication - Starting AtomApplication using Java 17.0.13 with PID 11125 (/Users/gangjong-won/Dubbi/Blinker/atom/build/classes/java/main started by gangjong-won in /Users/gangjong-won/Dubbi/Blinker/atom)
+2025-01-24 22:43:16 [restartedMain] DEBUG com.blinker.atom.AtomApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-24 22:43:16 [restartedMain] INFO  com.blinker.atom.AtomApplication - The following 1 profile is active: "dev"
+2025-01-24 22:43:16 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-24 22:43:16 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-24 22:43:16 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-24 22:43:16 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 7 JPA repository interfaces.
+2025-01-24 22:43:16 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-01-24 22:43:16 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-24 22:43:16 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-24 22:43:16 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-24 22:43:16 [restartedMain] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-01-24 22:43:16 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-24 22:43:16 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 635 ms
+2025-01-24 22:43:16 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-24 22:43:16 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-24 22:43:16 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-24 22:43:16 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-24 22:43:17 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@378e2bb8
+2025-01-24 22:43:17 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-24 22:43:17 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-24 22:43:17 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.15
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-24 22:43:17 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-24 22:43:17 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-24 22:43:17 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-24 22:43:17 [restartedMain] DEBUG c.b.a.c.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-01-24 22:43:17 [restartedMain] DEBUG c.b.a.c.error.ExceptionHandlerFilter - Filter 'exceptionHandlerFilter' configured for use
+2025-01-24 22:43:17 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-01-24 22:43:17 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-24 22:43:18 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-24 22:43:18 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-01-24 22:43:18 [restartedMain] INFO  com.blinker.atom.AtomApplication - Started AtomApplication in 1.962 seconds (process running for 2.178)
+2025-01-24 22:43:23 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-24 22:43:23 [http-nio-8080-exec-1] INFO  c.b.a.c.s.JwtAuthenticationFilter - 토큰 검증 성공: 'eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIkFETUlOIl0sInVzZXJJZCI6NywidXNlcm5hbWUiOiJhYWEiLCJpYXQiOjE3Mzc3MjQwMDMsImV4cCI6MTczODkzMzYwM30.qK5QzxuSiMesxY1pykSbffZynzI7AiBR8g6Tu7N_xQfsmn4nu4evHdCh6VKOvmlsnwQ1-3T_49cMgseQqdHy1A'
+2025-01-24 22:43:23 [http-nio-8080-exec-1] INFO  c.b.atom.service.ThingPlugService - Fetching Content Instance list from URL: http://thingplugpf.sktiot.com:9000/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa?fu=1&ty=4
+2025-01-24 22:43:23 [http-nio-8080-exec-1] DEBUG c.b.atom.service.ThingPlugService - Content Instance List Response: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><m2m:uril xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061188000593 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061187994334 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178936126 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178929426 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178922850 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178916165 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178909591 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061178902957 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061174135215 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061174128544 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061174121850 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173777157 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173773488 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173764274 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061173757470 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061169524054 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061169520080 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160363575 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160357342 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160351239 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160344876 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160338755 /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061160332405</m2m:uril>
+2025-01-24 22:43:23 [http-nio-8080-exec-1] INFO  c.b.atom.service.ThingPlugService - Latest Content Instance URI: /0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061188000593
+2025-01-24 22:43:23 [http-nio-8080-exec-1] INFO  c.b.atom.service.ThingPlugService - Fetching latest Content Instance data from URL: http://thingplugpf.sktiot.com:9000/0250791000001021/v1_0/remoteCSE-0000102140ca63fffe1df1ce/container-LoRa/contentInstance-CI00000000061188000593
+2025-01-24 22:43:23 [http-nio-8080-exec-1] DEBUG c.b.atom.service.ThingPlugService - Latest Content Instance Response: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><m2m:cin xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><ty>4</ty><ri>CI00000000061188000593</ri><rn>CI00000000061188000593</rn><pi>CT00000000000001162261</pi><ct>2025-01-24T22:41:19+09:00</ct><lt>2025-01-24T22:41:21+09:00</lt><ppt><gwl>37.195272,127.042591,0</gwl><geui>f4d9fbfffe845dd4</geui><devl>37.195272,127.042591,0</devl><fp>1</fp><trid></trid><plidx>0</plidx><ctype>11</ctype><fixType>8</fixType><result>0</result><accuracy>3000</accuracy></ppt><et>2025-01-25T22:41:19+09:00</et><st>4391</st><cr>RC00000000000001230554</cr><cnf>LoRa/Sensor</cnf><cs>102</cs><con>67d0f11dfe036928813200000000002303030703030303060606069000001400001602cef11dfe040200000000000000000017</con><containerCurrentByteSize>447690</containerCurrentByteSize></m2m:cin>
+2025-01-24 22:43:23 [http-nio-8080-exec-1] INFO  c.b.atom.service.ThingPlugService - Extracted <con> data: 67d0f11dfe036928813200000000002303030703030303060606069000001400001602cef11dfe040200000000000000000017
+2025-01-24 22:45:16 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-24 22:45:16 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-01-24 22:45:16 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-24 22:45:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-24 22:45:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
